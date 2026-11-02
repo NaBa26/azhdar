@@ -1,0 +1,15 @@
+{
+    "version": 6,
+    "configurePresets": [
+        {
+            "name": "qemu-debug",
+            "displayName": "QEMU Cortex-M4 Debug",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/qemu-debug",
+            "toolchainFile": "${sourceDir}/cmake/arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ]
+}

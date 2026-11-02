@@ -1,0 +1,24 @@
+cmake -DCMAKE_BUILD_TYPE=Debug --preset qemu-debug -S /home/socrates/Projects/azhdar -B /home/socrates/Projects/azhdar/build/qemu-debug
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+CMake Error:
+  Running
+
+   '/usr/bin/ninja' '-C' '/home/socrates/Projects/azhdar/build/qemu-debug/CMakeFiles/CMakeScratch/TryCompile-UJolCM' '-t' 'recompact'
+
+  failed with:
+
+   ninja: error: build.ninja:50: expected '=', got newline
+       -ffreestanding
+                     ^ near here
+
+
+
+CMake Error at /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile):
+  Failed to generate test project build system.
+Call Stack (most recent call first):
+  /usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)
+  CMakeLists.txt:3 (project)
+
+
+-- Configuring incomplete, errors occurred!
